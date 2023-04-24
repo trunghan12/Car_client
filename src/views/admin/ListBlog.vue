@@ -51,12 +51,12 @@ export default{
     name: 'ListBlog',
     computed: {
         listblog(){
-            this.getListBlog(1)
-            return store.state.list_blog
+            this.getAllBlogAdmin()
+            return store.state.all_blog_admin
         }
     },
     methods: {
-        ...mapActions(['getListBlog','deleteBlog']),
+        ...mapActions(['getAllBlogAdmin','deleteBlog']),
         handlerDeleteBlog(id){
             this.deleteBlog(id)
         },

@@ -13,11 +13,15 @@ const store = createStore({
         isAuthentication: false,
       },
       length_blog: 0,
+      all_blog_admin:[]
     }
   },
   mutations: {
     GETLISTBLOG(state,data){
       state.list_blog = data
+    },
+    GETALLBLOGADMIN(state,data){
+      state.all_blog_admin = data
     },
     ADD_BLOG(state,data){
       state.list_blog.unshift(data)
@@ -51,6 +55,14 @@ const store = createStore({
         commit('GETLISTBLOG',response.data)
       }catch(error){
           console.log("Loi action getListBlog")
+      }
+    },
+    async getAllBlogAdmin({commit}){
+      try{
+        const response = await axios.get('http://localhost:3000/api/blog')
+        commit('GETALLBLOGADMIN',response.data)
+      }catch(error){
+          console.log("Loi action getAllBlogAdmin")
       }
     },
     async getAllBlog({commit}){
