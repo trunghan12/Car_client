@@ -1,5 +1,5 @@
 <template>
-    <div class="">
+    <div class="" style="background: #fef5ef!important;">
         <HeaderApp />
         <SlideApp />
         <div class="we-are-block">
