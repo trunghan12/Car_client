@@ -2,8 +2,8 @@
     <div class="container-fluid" >
         <div id="demo" class="jumbotron jumbotron-fluid" >
             <div class="container">
-              <h1 class="text-center">THERANKME SHOP</h1>
-              <p class="text-center">Home > Shop</p>
+              <h1 class="text-center">HAN'S MOTO</h1>
+              <p class="text-center">Specializing in motorcycle introduction blog</p>
             </div>
         </div>
     </div>
